@@ -1,16 +1,27 @@
-## Hi there 👋
+# Joaquin Peñafiel
 
-<!--
-**joaquinpenafiel/joaquinpenafiel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Software development, data automation and digital process improvement.
 
-Here are some ideas to get you started:
+I work with Python, JavaScript, Node.js, SQL/MySQL and data-processing tools, with experience in automation, digital transformation, data migration, validation and structured information management.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I focus on building practical, documented and reproducible technical solutions, with particular interest in software architecture, automation, data systems and experimental development.
+
+## Core technologies
+
+- Python
+- JavaScript
+- Node.js
+- SQL / MySQL
+- Google Apps Script
+- Microsoft Excel / Google Sheets
+- Data automation
+- Data migration and validation
+- Process automation
+
+## Current focus
+
+Building a public portfolio of documented and reproducible software projects.
+
+Open to remote opportunities in software development, business systems, digital transformation, data and process automation.
+
+[LinkedIn](https://www.linkedin.com/in/joaquin-penafiel/)
