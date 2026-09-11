@@ -2,89 +2,41 @@
 
 **Backend & Applied AI | Python • FastAPI • JavaScript/Node.js • SQL • APIs • Observability • Docker • CI**
 
-I build backend services, API integrations, automation and data workflows with a strong focus on reliability, traceability, testing and reproducible technical work.
+I build backend services, API integrations, automation and applied AI systems with a focus on reliability, traceability and evidence-based engineering decisions.
 
-My background combines software development with data/process transformation in operational environments. My recent work is focused on backend systems, external API integration and applied AI services.
+My background combines software development with data/process transformation in operational environments.
 
 ## Featured project
 
 ### AI API Observability
 
-Production-deployed FastAPI service for external API and AI-provider integration with explicit reliability and observability controls.
-
-**What it demonstrates:**
-
-- Python / FastAPI backend development
-- GitHub REST API integration
-- direct Gemini and Anthropic HTTP integrations
-- retries with exponential backoff
-- timeout, rate-limit and transient 5xx handling
-- structured logging and request correlation IDs
-- HMAC-SHA256 signed webhooks
-- SQLite / SQL persistence and aggregation
-- token usage and estimated API-cost telemetry
-- Docker containerization
-- GitHub Actions CI
-- Railway deployment with persistent storage
-- 38 automated tests
-
-**Live validation:**
-
-- 6 successful Gemini production requests
-- 0 failures in the validation snapshot
-- 531 total tokens recorded
-- input/output token usage persisted per request
-- estimated cost and latency telemetry exposed through the dashboard
-
-Anthropic behavior is covered by mocked automated tests; no live Anthropic-provider validation is claimed.
+Production-deployed FastAPI service for external API and AI-provider integration, with explicit reliability, observability and failure-handling controls.
 
 **Links**
 
-- [Repository](https://github.com/joaquinpenafiel/ai-api-observability)
 - [Live Dashboard](https://ai-api-observability-production.up.railway.app/dashboard)
+- [Repository](https://github.com/joaquinpenafiel/ai-api-observability)
+- [Architecture & Engineering Decisions](https://github.com/joaquinpenafiel/ai-api-observability/blob/main/docs/ARCHITECTURE.md)
 - [API Documentation](https://ai-api-observability-production.up.railway.app/docs)
+
+The project includes direct Gemini and Anthropic HTTP integrations, retries/backoff, request tracing, HMAC-SHA256 webhooks, SQL-backed telemetry, token/cost tracking, Docker, CI and 38 automated tests.
+
+A dedicated load probe was used to separate HTTP-layer degradation from SQLite write contention. The measurements exposed both concurrent-write lock behavior and an unexpectedly expensive single-writer baseline, leading to a follow-up investigation of the persistence pattern rather than assuming SQLite itself was the bottleneck.
 
 ## Core technologies
 
-**Backend & APIs**
-- Python
-- FastAPI
-- JavaScript / Node.js
-- REST APIs
-- httpx
-- Webhooks
+**Backend:** Python, FastAPI, JavaScript/Node.js, REST APIs, httpx, Webhooks
 
-**Data**
-- SQL / MySQL
-- SQLite
-- Data migration
-- Validation and normalization
+**Data:** SQL, MySQL, SQLite, data migration, validation and normalization
 
-**Reliability & Delivery**
-- pytest
-- Structured logging
-- Request tracing
-- Docker
-- GitHub Actions
-- Railway
+**Reliability & Delivery:** pytest, structured logging, request tracing, Docker, GitHub Actions, Railway
 
-**Applied AI**
-- AI provider integrations
-- Token and cost telemetry
-- AI-assisted technical review, debugging and validation workflows
+**Applied AI:** AI-provider integrations, token/cost telemetry, provider normalization and failure handling
 
 ## Professional focus
 
-I am particularly interested in roles involving:
+Backend Engineering • Applied AI • API & Systems Integration • Automation • Data-intensive Systems • Reliability & Observability
 
-- Backend engineering
-- Applied AI / AI integrations
-- API and systems integration
-- Automation
-- Data-intensive systems
-- Reliability and observability
-- Technical problem solving and solution design
-
-I value explicit engineering trade-offs, evidence-based validation and building systems whose behavior can be inspected and tested.
+I value explicit engineering trade-offs, reproducible experiments and systems whose behavior can be inspected and tested.
 
 [LinkedIn](https://www.linkedin.com/in/joaquin-penafiel/)
