@@ -21,7 +21,7 @@ Production-deployed FastAPI service for external API and AI-provider integration
 
 The project includes direct Gemini and Anthropic HTTP integrations, retries/backoff, request tracing, HMAC-SHA256 webhooks, SQL-backed telemetry, token/cost tracking, Docker, CI and 38 automated tests.
 
-A dedicated load probe was used to separate HTTP-layer degradation from SQLite write contention. The measurements exposed both concurrent-write lock behavior and an unexpectedly expensive single-writer baseline, leading to a follow-up investigation of the persistence pattern rather than assuming SQLite itself was the bottleneck.
+A dedicated load probe separated HTTP-layer degradation from SQLite write contention. Follow-up controlled experiments showed that WAL mode combined with persistent worker-local connections moved the measured persistence boundary substantially, delivering approximately 3.7x–4.4x more successful-write throughput across the tested concurrency range while reducing lock errors and latency. The optimization improved the boundary but did not eliminate contention at higher concurrency.
 
 ## Core technologies
 
