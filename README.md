@@ -1,6 +1,6 @@
 # Joaquin Peñafiel
 
-**Backend & Applied AI | Python • FastAPI • JavaScript/Node.js • SQL • APIs • Observability • Docker • CI**
+**Backend & Applied AI | Python • FastAPI • JavaScript/Node.js • SQL • APIs • Observability • Docker • CI** 
 
 I build backend services, API integrations, automation and applied AI systems with a focus on reliability, traceability and evidence-based engineering decisions.
 
